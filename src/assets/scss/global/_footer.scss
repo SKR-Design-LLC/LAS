@@ -1,0 +1,23 @@
+// Footer
+footer {
+  padding: 0 0 1rem 0;
+
+  .footer__banner {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-bottom: 3rem;
+    &_img {
+      width: 98px;
+      height: 56px;
+      opacity: 50%;
+    }
+  }
+
+  .footer__copyright {
+    font-size: $small-font-size;
+    font-style: italic;
+    padding-bottom: 5rem;
+  }
+
+}

@@ -1,0 +1,40 @@
+// Header
+.header__top_image {grid-area: top_image;}
+h1 {grid-area: h1;}
+h2 {grid-area: h2;}
+h3 {grid-area: h3;}
+.header__container_curly {grid-area: curly;}
+
+header.header__container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:  auto;
+  justify-items: center;
+  grid-template-areas:
+    "top_image"
+    "h1"
+    "h2"
+    "h3"
+    "curly"
+  ;
+  //padding: 8rem 0 0 0; //160px 0 250px 0
+
+  span {
+    font-size: 60%;
+    padding-right: .65rem;
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+
+  img.header__container_curly {
+    padding-top: 4.4%; //26px
+    width: 82%;
+  }
+
+}
+
+.shot_top {
+  height: 100vh;
+}

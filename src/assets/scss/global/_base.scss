@@ -1,0 +1,24 @@
+
+// Base
+// html
+html {
+  border: 2.5px solid $primary;
+}
+
+// Body
+// header.header__container {grid-area:header;}
+// #main_content {grid-area:main;}
+// footer {grid-area:footer;}
+
+body {
+  margin: 0 auto;
+
+  width: 96%;
+  padding: 0 .25rem;
+  @include breakpoint(medium) {
+    width: 80%;
+  }
+  @include breakpoint(large up) {
+    width: 37.5rem; //600px
+  }
+}

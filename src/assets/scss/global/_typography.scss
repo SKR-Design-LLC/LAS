@@ -1,0 +1,50 @@
+body {
+  font-size: 150%;
+  text-align: center;
+    @include breakpoint(large up) {
+      font-size: 175%;
+    }
+}
+
+h1 {
+    font-size: 200%;
+    color: $primary;
+    text-transform: uppercase;
+    line-height: 1.1;
+    @include breakpoint(large up) {
+      font-size: 215%;
+    }
+}
+
+h2 {
+    font-size: 130%;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 110%;
+    line-height: 1.1;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 150%;
+    font-style: italic;
+}
+
+h5, h6 {
+    font-size: 120%;
+    font-style: italic;
+}
+
+a {
+    font-weight: 700;
+    &:hover, &:focus, &:active {
+        background-color: $anchor-color;
+    }
+}
+
+.copyright {
+    font-size: $small-font-size;
+    font-style: italic;
+}
