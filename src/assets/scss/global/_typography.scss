@@ -1,39 +1,49 @@
 body {
-  font-size: 150%;
+  font-size: 120%;
   text-align: center;
-    @include breakpoint(large up) {
-      font-size: 175%;
-    }
+  @include breakpoint(medium up) {
+    font-size: 150%;
+  }
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 150%;
     color: $primary;
     text-transform: uppercase;
-    line-height: 1.1;
-    @include breakpoint(large up) {
-      font-size: 215%;
+    line-height: 1.0;
+    @include breakpoint(medium up) {
+      font-size: 170%;
     }
 }
 
 h2 {
-    font-size: 130%;
-    line-height: 1.1;
+    font-size: 80%;
+    line-height: 1.0;
+    @include breakpoint(medium up) {
+      font-size: 100%;
+    }
 }
 
 h3 {
-    font-size: 110%;
+    font-size: 78%;
     line-height: 1.1;
     font-style: italic;
+
+    @include breakpoint(medium up) {
+      font-size: 88%;
+    }
 }
 
 h4 {
-    font-size: 150%;
+    font-size: 133%;
     font-style: italic;
+    @include breakpoint(medium up) {
+      font-size: 150%;
+    }
 }
 
 h5, h6 {
-    font-size: 120%;
+    font-size: 150%;
     font-style: italic;
 }
 

@@ -6,10 +6,15 @@ h3 {grid-area: h3;}
 .header__container_curly {grid-area: curly;}
 
 header.header__container {
-  height: 100vh;
+  height: 89vh;
+  padding: 2.75rem 0 2rem 0;
+  @include breakpoint(medium up) {
+    height: 100vh;
+    padding: 4rem 0 3.5rem 0;
+  }
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows:  auto;
+  grid-template-rows: auto;
   justify-items: center;
   grid-template-areas:
     "top_image"
@@ -19,22 +24,31 @@ header.header__container {
     "curly"
   ;
   //padding: 8rem 0 0 0; //160px 0 250px 0
-
+  .header__top_image {
+    width: 26.25rem;// 420px
+    padding-bottom: 0.8rem;
+    @include breakpoint(medium up) {
+      padding-bottom: 1rem;
+    }
+  }
   span {
-    font-size: 60%;
-    padding-right: .65rem;
+    font-size: 52.5%;
+    @include breakpoint(medium up) {
+      font-size: 60%;
+      padding-right: .3rem;
+    }
     &:last-of-type {
       padding-right: 0;
     }
   }
 
   img.header__container_curly {
-    padding-top: 4.4%; //26px
-    width: 82%;
+    width: 20rem;// 320px
+    padding-top: 1rem; //26px
+    @include breakpoint(medium up) {
+      padding-top: 1.625rem; //26px
+
+    }
   }
 
-}
-
-.shot_top {
-  height: 100vh;
 }

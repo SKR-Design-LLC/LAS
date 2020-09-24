@@ -1,6 +1,9 @@
 // Footer
 footer {
-  padding: 0 0 1rem 0;
+  padding-bottom: 4rem;
+  @include breakpoint(medium up) {
+    padding-bottom: 5rem;
+  }
 
   .footer__banner {
     display: flex;
@@ -8,16 +11,18 @@ footer {
     flex-flow: row nowrap;
     margin-bottom: 3rem;
     &_img {
-      width: 98px;
-      height: 56px;
+      width: 20%;
       opacity: 50%;
+      @include breakpoint(medium up) {
+        width: 100%;
+      }
     }
   }
 
   .footer__copyright {
     font-size: $small-font-size;
     font-style: italic;
-    padding-bottom: 5rem;
+
   }
 
 }

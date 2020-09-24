@@ -4,7 +4,10 @@ main#main_content {
   padding-right: 0;
 
   article {
-    padding-bottom: 12.5rem; //200px
+    padding-bottom: 7rem; //200px
+    @include breakpoint(medium up) {
+      padding-bottom: 12.5rem; //200px
+    }
     &:last-child {
       padding-bottom: 3rem;
     }
@@ -15,8 +18,11 @@ main#main_content {
 
   section {
     figure > img, img {
-      padding-top: 12.5rem; //200px
+      padding-top: 9rem; //200px
       padding-bottom: 2.5rem; //40px
+      @include breakpoint(medium up) {
+        padding-top: 12.5rem; //200px
+      }
     }
   }
 
