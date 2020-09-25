@@ -1,12 +1,12 @@
 // Main Content Area
 main#main_content {
-  padding-top: 15.625rem;
+  padding-top: 10rem;
   padding-right: 0;
 
   article {
     padding-bottom: 7rem; //200px
     @include breakpoint(medium up) {
-      padding-bottom: 12.5rem; //200px
+      padding-bottom: 11.5rem; //200px
     }
     &:last-child {
       padding-bottom: 3rem;

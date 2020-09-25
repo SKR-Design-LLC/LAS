@@ -7,38 +7,40 @@ h3 {grid-area: h3;}
 
 header.header__container {
   padding: 2.75rem 0 2rem 0;
-
   @include breakpoint(medium up) {
     height: 100vh;
     padding: 4rem 0 3.5rem 0;
   }
+  @include breakpoint(landscape) {
+    padding: 4rem 0 3.5rem 0;
+    height: auto;
+  }
+  @include breakpoint(portrait) {
+    padding: 3rem 0 3.5rem 0;
+    height: auto;
+  }
 
-  //padding: 8rem 0 0 0; //160px 0 250px 0
   .header__top_image {
     width: 26.25rem;// 420px
     padding-bottom: 0.8rem;
-    @include breakpoint(medium up) {
+    @include breakpoint(msmall up) {
       padding-bottom: 1rem;
     }
   }
-  span {
-    font-size: 52.5%;
-    @include breakpoint(medium up) {
-      font-size: 60%;
-      padding-right: .3rem;
-    }
-    &:last-of-type {
-      padding-right: 0;
-    }
-  }
+
 
   img.header__container_curly {
     width: 12.5rem;// 320px
     padding-top: 1rem; //26px
-    @include breakpoint(medium up) {
+    @include breakpoint(msmall up) {
       padding-top: 1.625rem; //26px
+      width: 14rem;
+    }
+    @include breakpoint(midsmall up) {
+      width: 17rem;
+    }
+    @include breakpoint(lsmall up) {
       width: 20rem;// 320px
-
     }
   }
 

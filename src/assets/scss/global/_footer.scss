@@ -6,17 +6,31 @@ footer {
   }
 
   .footer__banner {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
+    text-align: justify;
     margin-bottom: 3rem;
-    &_img {
-      width: 20%;
-      opacity: 50%;
-      @include breakpoint(medium up) {
+    &:after {
+        content: '';
+        display: inline-block;
         width: 100%;
-      }
+
     }
+    @supports (display: flex) {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+    }
+
+  }
+  .footer__banner:after {
+    @supports (display: flex) {
+      content:none;
+    }
+  }
+
+  img.footer__banner_img {
+    width: 20%;
+    opacity: 50%;
+    display: inline-block;
   }
 
   .footer__copyright {

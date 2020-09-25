@@ -1,62 +1,106 @@
 
 
 body {
-  font-size: 120%;
+  font-size: 1.2rem; //19.2px
   text-align: center;
   @include breakpoint(medium up) {
-    font-size: 150%;
+    font-size: 1.5rem; //24px
   }
-}
 
-h1 {
-    font-size: 150%;
-    color: $primary;
-    text-transform: uppercase;
-    line-height: 1.0;
-    @include breakpoint(medium up) {
-      font-size: 170%;
-    }
-}
 
-h2 {
-    font-size: 80%;
-    line-height: 1.0;
-    @include breakpoint(medium up) {
-      font-size: 100%;
-    }
-}
+   h1 {
+      font-size: 1.8rem; //28.8px
+      color: $primary;
+      text-transform: uppercase;
+      line-height: 1.0;
+      @include breakpoint(msmall up) {
+        font-size: 2rem;
+      }
+      @include breakpoint(midsmall up) {
+        font-size: 2.2rem;
+      }
+      @include breakpoint(lsmall up) {
+        font-size: 2.563rem; //41px
+      }
 
-h3 {
-    font-size: 78%;
-    line-height: 1.1;
-    font-style: italic;
+      span {
+        font-size: 0.955rem; //15.28px
+        @include breakpoint(msmall up) {
+          font-size: 1rem;
+        }
+        @include breakpoint(midsmall up) {
+          font-size: 1.3rem;
+          padding-right: .3rem;
+        }
+        @include breakpoint(lsmall up) {
+          font-size: 1.54rem; //24.64px
+        }
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
 
-    @include breakpoint(medium up) {
-      font-size: 88%;
-    }
-}
+  }
 
-h4 {
-    font-size: 133%;
-    font-style: italic;
-    @include breakpoint(medium up) {
-      font-size: 150%;
-    }
-}
+  h2 {
+      font-size: 0.96rem; // 15.36px
+      line-height: 1.2;
+      @include breakpoint(msmall up) {
+        font-size: 1.3rem; // 19.2px
+      }
+      @include breakpoint(midsmall up) {
+        font-size: 1.35rem; // 19.2px
+      }
+      @include breakpoint(lsmall up) {
+        font-size: 1.4rem; // 19.2px
+      }
+  }
 
-h5, h6 {
-    font-size: 150%;
-    font-style: italic;
-}
+  h3 {
+      font-size: 1rem; // 16px
+      line-height: 1.1;
+      font-style: italic;
+      @include breakpoint(msmall up) {
+        font-size: 1.15rem;
+      }
+      @include breakpoint(midsmall up) {
+        font-size: 1.25rem;
+      }
+      @include breakpoint(lsmall up) {
+        font-size: 1.35rem;
+      }
 
-a {
-    font-weight: 700;
-    &:hover, &:focus, &:active {
-        background-color: $anchor-color;
-    }
-}
+  }
 
-.copyright {
-    font-size: $small-font-size;
-    font-style: italic;
+  h4 {
+      font-size: 1.6rem; // 25.6px
+      font-style: italic;
+      @include breakpoint(msmall up) {
+        font-size: 1.71rem; // 36px
+      }
+      @include breakpoint(midsmall up) {
+        font-size: 2.25rem; // 36px
+      }
+  }
+
+  h5, h6 {
+      font-size: 1.3rem; // 20.8px
+      font-style: italic;
+      @include breakpoint(msmall up) {
+        font-size: 1.75rem; // 28px
+      }
+  }
+
+  a {
+      font-weight: 700;
+      &:hover, &:focus, &:active {
+          background-color: $anchor-color;
+      }
+  }
+
+  .copyright {
+      font-size: $small-font-size;
+      font-style: italic;
+  }
+
 }

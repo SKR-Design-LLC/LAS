@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
+//@import 'motion-ui';
 
 
 // Global styles
@@ -37,7 +37,7 @@
 // @include foundation-accordion;
 //@include foundation-media-object;
 // @include foundation-orbit;
-@include foundation-responsive-embed;
+//@include foundation-responsive-embed;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // Menu-based containers
@@ -64,8 +64,8 @@
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
-@import './global/_typography.scss';
 @import './global/_base.scss';
+@import './global/_typography.scss';
 @import './global/_accessibility.scss';
 @import './global/_header.scss';
 @import './global/_main_content.scss';
