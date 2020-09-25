@@ -1,23 +1,28 @@
 
 // Base
+@font-face {
+ font-family: 'Playfair Display', serif;
+ src: url('{{root}}/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype'),
+     url('{{root}}/assets/font/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+ font-weight: 400 700;
+ font-stretch: 75% 125%;
+ font-style: oblique 0deg 20deg;
+}
 // html
 html {
   border: 1.5px solid $primary;
   @include breakpoint(medium up) {
-    border-width: 2.5px;
+    border-width: 2px;
   }
 }
 
 // Body
-// header.header__container {grid-area:header;}
-// #main_content {grid-area:main;}
-// footer {grid-area:footer;}
-
 body {
   margin: 0 auto;
-
   width: 80%;
   padding: 0 .25rem;
+
+
   @include breakpoint(medium up) {
     width: 37.5rem; //600px
   }

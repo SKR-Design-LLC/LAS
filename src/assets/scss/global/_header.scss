@@ -6,7 +6,6 @@ h3 {grid-area: h3;}
 .header__container_curly {grid-area: curly;}
 
 header.header__container {
-  height: 89vh;
   padding: 2.75rem 0 2rem 0;
   @include breakpoint(medium up) {
     height: 100vh;
@@ -43,10 +42,11 @@ header.header__container {
   }
 
   img.header__container_curly {
-    width: 20rem;// 320px
+    width: 12.5rem;// 320px
     padding-top: 1rem; //26px
     @include breakpoint(medium up) {
       padding-top: 1.625rem; //26px
+      width: 20rem;// 320px
 
     }
   }

@@ -65,7 +65,7 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 1rem;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
@@ -151,7 +151,7 @@ $breakpoint-classes: (xsmall small medium large);
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: $body-font-family;
 $header-color: $primary;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
