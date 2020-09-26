@@ -13,6 +13,7 @@ body {
       color: $primary;
       text-transform: uppercase;
       line-height: 1.0;
+
       @include breakpoint(msmall up) {
         font-size: 2rem;
       }
@@ -22,6 +23,13 @@ body {
       @include breakpoint(lsmall up) {
         font-size: 2.563rem; //41px
       }
+      @include breakpoint(large and xlarge) {
+        font-size: 2.3rem;
+      }
+      @include breakpoint(hidpi-3) {
+        font-size: 2.563rem; //41px
+      }
+
 
       span {
         font-size: 0.955rem; //15.28px
@@ -30,10 +38,21 @@ body {
         }
         @include breakpoint(midsmall up) {
           font-size: 1.3rem;
-          padding-right: .3rem;
+          //padding-right: .2rem;
         }
         @include breakpoint(lsmall up) {
           font-size: 1.54rem; //24.64px
+        }
+        @include breakpoint(large and xlarge) {
+          font-size: 1.3rem;
+        }
+        @include breakpoint(hidpi-3) {
+          font-size: 1.54rem; //24.64px
+        }
+
+
+        &:first-of-type {
+          padding-right: 0.3rem;
         }
         &:last-of-type {
           padding-right: 0;
@@ -54,6 +73,13 @@ body {
       @include breakpoint(lsmall up) {
         font-size: 1.4rem; // 19.2px
       }
+      @include breakpoint(large and xlarge) {
+        font-size: 1.3rem;
+      }
+      @include breakpoint(hidpi-3) {
+        font-size: 1.4rem; // 19.2px
+      }
+
   }
 
   h3 {
@@ -67,6 +93,12 @@ body {
         font-size: 1.25rem;
       }
       @include breakpoint(lsmall up) {
+        font-size: 1.35rem;
+      }
+      @include breakpoint(large and xlarge) {
+        font-size: 1.15rem;
+      }
+      @include breakpoint(hidpi-3) {
         font-size: 1.35rem;
       }
 
