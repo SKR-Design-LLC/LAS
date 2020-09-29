@@ -11,6 +11,7 @@
 // html
 html {
   border: 1.5px solid $primary;
+  width: 100%;
   @include breakpoint(medium up) {
     border-width: 2px;
   }

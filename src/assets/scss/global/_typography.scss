@@ -26,9 +26,7 @@ body {
       @include breakpoint(large and xlarge) {
         font-size: 2.3rem;
       }
-      @include breakpoint(hidpi-3) {
-        font-size: 2.563rem; //41px
-      }
+
 
 
       span {
@@ -46,9 +44,7 @@ body {
         @include breakpoint(large and xlarge) {
           font-size: 1.3rem;
         }
-        @include breakpoint(hidpi-3) {
-          font-size: 1.54rem; //24.64px
-        }
+
 
 
         &:first-of-type {
@@ -76,19 +72,14 @@ body {
       @include breakpoint(large and xlarge) {
         font-size: 1.3rem;
       }
-      @include breakpoint(hidpi-3) {
-        font-size: 1.4rem; // 19.2px
-      }
+
 
   }
 
   h3 {
-      font-size: 1rem; // 16px
+      font-size: .9rem; // 16px
       line-height: 1.1;
       font-style: italic;
-      @include breakpoint(msmall up) {
-        font-size: 1.15rem;
-      }
       @include breakpoint(midsmall up) {
         font-size: 1.25rem;
       }
@@ -98,9 +89,7 @@ body {
       @include breakpoint(large and xlarge) {
         font-size: 1.15rem;
       }
-      @include breakpoint(hidpi-3) {
-        font-size: 1.35rem;
-      }
+
 
   }
 
