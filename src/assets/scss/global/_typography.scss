@@ -4,7 +4,7 @@ body {
   font-size: 1.2rem; //19.2px
   text-align: center;
   @include breakpoint(medium up) {
-    font-size: 1.5rem; //24px
+    font-size: 1.5rem; //24px or 1.42rem
   }
 
 
@@ -104,11 +104,18 @@ body {
       }
   }
 
-  h5, h6 {
-      font-size: 1.3rem; // 20.8px
-      font-style: italic;
+  h5 {
+      font-size: 1.5rem; // 20.8px
       @include breakpoint(msmall up) {
         font-size: 1.75rem; // 28px
+      }
+  }
+
+  h6 {
+      font-size: 1.4rem; // 20.8px
+      font-style: italic;
+      @include breakpoint(msmall up) {
+        font-size: 1.3rem; // 28px
       }
   }
 

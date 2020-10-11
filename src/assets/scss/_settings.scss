@@ -89,7 +89,7 @@ $black: #333333;
 $white: #FCFCFC;
 $body-background: $secondary;
 $body-font-color: $primary;
-$body-font-family: 'Playfair Display', Times New Roman, Times, Georgia, serif;
+$body-font-family: 'Playfair Display', Georgia, Times New Roman, Times, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -120,6 +120,7 @@ $breakpoints: (
   lsmall: 540px,
   medium: 640px,
   midmedium: 740px,
+  largmedium: 850px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
@@ -132,7 +133,7 @@ $breakpoints-hidpi: (
   hidpi-3: 3
 );
 $print-breakpoint: large;
-$breakpoint-classes: (xsmall small msmall midsmall lsmall medium midmedium large xlarge xxlarge);
+$breakpoint-classes: (xsmall small msmall midsmall lsmall medium midmedium largmedium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
