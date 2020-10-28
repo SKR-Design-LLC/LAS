@@ -35,8 +35,6 @@ body {
 
 
 // CMS editor updates
-html [data-cms-editable] {
-  outline-color: royalblue;
-  width: 99%;
-  margin: 0 auto;
+html .mce-content-body {
+  outline-offset: -2px;
 }

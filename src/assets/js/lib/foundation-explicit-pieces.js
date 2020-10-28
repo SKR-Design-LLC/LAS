@@ -6,11 +6,11 @@ import { Box } from 'foundation-sites/js/foundation.util.box'
 import { onImagesLoaded } from 'foundation-sites/js/foundation.util.imageLoader';
 import { Keyboard } from 'foundation-sites/js/foundation.util.keyboard';
 import { MediaQuery } from 'foundation-sites/js/foundation.util.mediaQuery';
-import { Motion, Move } from 'foundation-sites/js/foundation.util.motion';
+//import { Motion, Move } from 'foundation-sites/js/foundation.util.motion';
 // import { Nest } from 'foundation-sites/js/foundation.util.nest';
 // import { Timer } from 'foundation-sites/js/foundation.util.timer';
-import { Touch } from 'foundation-sites/js/foundation.util.touch';
-import { Triggers } from 'foundation-sites/js/foundation.util.triggers';
+//import { Touch } from 'foundation-sites/js/foundation.util.touch';
+//import { Triggers } from 'foundation-sites/js/foundation.util.triggers';
 // import { Abide } from 'foundation-sites/js/foundation.abide';
 // import { Accordion } from 'foundation-sites/js/foundation.accordion';
 // import { AccordionMenu } from 'foundation-sites/js/foundation.accordionMenu';
@@ -26,7 +26,7 @@ import { Triggers } from 'foundation-sites/js/foundation.util.triggers';
 //import { ResponsiveToggle } from 'foundation-sites/js/foundation.responsiveToggle';
 //import { Reveal } from 'foundation-sites/js/foundation.reveal';
 // import { Slider } from 'foundation-sites/js/foundation.slider';
-import { SmoothScroll } from 'foundation-sites/js/foundation.smoothScroll';
+//import { SmoothScroll } from 'foundation-sites/js/foundation.smoothScroll';
 // import { Sticky } from 'foundation-sites/js/foundation.sticky';
 // import { Tabs } from 'foundation-sites/js/foundation.tabs';
 // import { Toggler } from 'foundation-sites/js/foundation.toggler';
@@ -46,16 +46,15 @@ Foundation.onLoad = CoreUtils.onLoad;
 Foundation.Box = Box;
 Foundation.onImagesLoaded = onImagesLoaded;
 Foundation.Keyboard = Keyboard;
-Foundation.MediaQuery = MediaQuery;
-Foundation.Motion = Motion;
-Foundation.Move = Move;
+//Foundation.Motion = Motion;
+//Foundation.Move = Move;
 // Foundation.Nest = Nest;
 // Foundation.Timer = Timer;
 
 // Touch and Triggers previously were almost purely sede effect driven,
 // so no need to add it to Foundation, just init them.
-Touch.init($);
-Triggers.init($, Foundation);
+//Touch.init($);
+//Triggers.init($, Foundation);
 MediaQuery._init();
 
 // Foundation.plugin(Abide, 'Abide');
@@ -73,7 +72,7 @@ MediaQuery._init();
 //Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 //Foundation.plugin(Reveal, 'Reveal');
 // Foundation.plugin(Slider, 'Slider');
-Foundation.plugin(SmoothScroll, 'SmoothScroll');
+//Foundation.plugin(SmoothScroll, 'SmoothScroll');
 // Foundation.plugin(Sticky, 'Sticky');
 // Foundation.plugin(Tabs, 'Tabs');
 // Foundation.plugin(Toggler, 'Toggler');

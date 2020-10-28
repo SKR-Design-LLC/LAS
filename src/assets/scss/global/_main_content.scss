@@ -14,7 +14,11 @@ main#main_content {
     }
 
     header {
-      margin-bottom: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &.reference_section {
+      border: 1px dashed $primary;
     }
   } // end article
 
@@ -23,59 +27,115 @@ main#main_content {
       padding-bottom: 2.5rem;
     }
 
-    img.img_full_width_extra_large {
-
-    }
-    img.img_width_large {
+    .ninetyfive_image_width {
       padding-right: 1rem;
       padding-left: 1rem;
     }
-    img.img_width_extra_medium {
+    .ninety_image_width {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      @include breakpoint(medium up) {
+        padding-right: 1.937rem;
+        padding-left: 1.937rem;
+      }
+
+    }
+    .eightyfive_image_width {
       padding-right: 2rem;
       padding-left: 2rem;
 
+      @include breakpoint(medium up) {
+        padding-right: 2.875rem;
+        padding-left: 2.875rem;
+      }
+
     }
-    img.img_width_medium {
+    .eighty_image_width {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
-
       @include breakpoint(medium up) {
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: 4.1rem;
+        padding-left: 4.1rem;
       }
-      
     }
-    img.img_width_extra_small {
+    .seventyfive_image_width {
       padding-right: 3rem;
       padding-left: 3rem;
-    }
-    img.img_width_small {
-      padding-right: 3.5rem;
-      padding-left: 3.5rem;
 
       @include breakpoint(medium up) {
-        padding-right: 4rem;
-        padding-left: 4rem;
+        padding-right: 5.05rem;
+        padding-left: 5.05rem;
       }
 
     }
+
+    .seventy_image_width {
+      padding-right: 3.25rem;
+      padding-left: 3.25rem;
+      @include breakpoint(medium up) {
+        padding-right: 6rem;
+        padding-left: 6rem;
+      }
+    }
+
+    .sixtyfive_image_width {
+      padding-right: 3.5rem;
+      padding-left: 3.5rem;
+      @include breakpoint(medium up) {
+        padding-right: 7.25rem;
+        padding-left: 7.25rem;
+      }
+    }
+
+    .sixty_image_width {
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
+      @include breakpoint(medium up) {
+        padding-right: 9.1rem;
+        padding-left: 9.1rem;
+      }
+    }
+
+    .fiftyfive_image_width {
+      padding-right: 4rem;
+      padding-left: 4rem;
+      @include breakpoint(medium up) {
+        padding-right: 10.35rem;
+        padding-left: 10.35rem;
+      }
+    }
+
+    .fifty_image_width {
+      padding-right: 4.25rem;
+      padding-left: 4.25rem;
+      @include breakpoint(medium up) {
+        padding-right: 12.25rem;
+        padding-left: 12.25rem;
+      }
+    }
+
+
 
   }
 
 // video area
   #video_div {
     width: 100%;
-    height: 300px;
-    @include breakpoint(msmall up) {
+    margin-bottom: 1.5rem;
+    height: 100%;
+    @include breakpoint(lsmall up) {
+      height: 350px;
+    }
+    @include breakpoint(largmedium up) {
       margin-bottom: 2.5rem;
       height: 450px;
-
     }
   }
 
   #video_frame {
     width: 100%;
     border: 0;
+    height: 100%;
     //original width="600" height="338"
   }
 
