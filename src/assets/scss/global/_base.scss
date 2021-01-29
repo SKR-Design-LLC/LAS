@@ -36,6 +36,11 @@ body {
 // sitemap
 .sitemap {
   padding-bottom: 8rem;
+
+  ul {
+    list-style: none;
+    margin-left: -.45rem;
+  }
 }
 
 
